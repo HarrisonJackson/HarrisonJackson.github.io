@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Harrison Jackson | Mountain Man Developer
+title: Startups
 ---
 
 <div id="home">
-  <h1>Blog Posts</h1>
+  <h1>Startup Posts</h1>
   <ul class="posts">
-    {% for post in site.posts %}
+    {% for post in site.categories.frontend %}
       <li><a href="{{ post.url }}">{{ post.title }}</a> &raquo; <span>{{ post.date | date_to_string }}</span></li>
     {% endfor %}
   </ul>
